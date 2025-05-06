@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100vh;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #3c7c40;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    background-color: #60a162;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    transition: background 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #4e8e51;
+  }
+  
+  .content-area {
+    flex: 1;
+    background-color: #71b372;
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .section {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 20px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .section:target {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
+    
+  .pct_perf {
+    border-radius: 50%;
+  }
+
+  .title {
+    color: white;
+    padding-bottom: 10%;
+  }
+
+  .casamento {
+    width: 100px;
+    height: auto;
+  }
+
+  .personal {
+    display: flex;
+    gap: 30px;
+  }
+
+  .hobby {
+    width: auto;
+    height: auto;
+  }
+
+  .hobbies {
+    padding-top: 10%;
+    display: flex;
+    gap: 30px;
+  }
+
+  .prof {
+    width: auto;
+    height: auto;
+  }
+
+  .profissional {
+    padding-top: 5%;
+  }
+
